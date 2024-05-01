@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <table>
+            <tr>
+                <td><label for="num1">Number 1:</label></td>
+                <td><input type="number" id="num1" min="0"></td>
+            </tr>
+            <tr>
+                <td><label for="num2">Number 2:</label></td>
+                <td><input type="number" id="num2" min="0"></td>
+            </tr>
+            <tr>
+                <td><label for="operation">Operation:</label></td>
+                <td>
+                    <select id="operation">
+                        <option value="add">Addition</option>
+                        <option value="subtract">Subtraction</option>
+                        <option value="multiply">Multiplication</option>
+                        <option value="divide">Division</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button onclick="calculate()">Calculate</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><span id="result"></span></td>
+            </tr>
+        </table>
+    </div>
+    <script src="part4.js"></script>
+</body>
+</html>
